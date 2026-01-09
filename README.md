@@ -129,7 +129,7 @@ tmp_
 
 Ce projet peut être exécuté automatiquement à l’aide de **cron** afin de planifier des sauvegardes régulières (ex : quotidiennes).
 ```bash
- Example of job definition:
+# Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
 # |  |  .---------- day of month (1 - 31)
