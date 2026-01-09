@@ -47,20 +47,29 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
 ---
 ## Déploiement et utilisation
 
-## Création de l’arborescence et récupération du projet
+## Installation rapide (GitHub)
 
-Déposer l'ensemble du projet dans le répertoire : /opt/docker/backups/
+```bash
+mkdir -p /opt/docker/
+cd /opt/docker/
+# Cloner le projet
+git clone https://github.com/Lucciano-stn/docker_volume-backup.git backups
+cd backups/script
+chmod +x backup_volumes.sh
+chmod +x restore_volume.sh
+```
+
+## Alternative manuelle (sans Git) :
 
 ```bash
 mkdir -p /opt/docker/backups/
 cd /opt/docker/backups/
-```
-
-Rendre les scripts exécutable. 
-```bash
+# Télécharger ZIP ou copier les fichiers
+cd script
 chmod +x backup_volumes.sh
 chmod +x restore_volume.sh
 ```
+
 ## Vérification
 
 ```bash
