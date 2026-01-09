@@ -52,9 +52,9 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
 ```bash
 mkdir -p /opt/docker/backups/{archive,log,script}
 touch /opt/docker/backups/log/{backup.log,restore.log}
-cd /opt/docker/
+cd /opt/docker/backups/
 # Cloner le projet
-git clone https://github.com/Lucciano-stn/docker_volume-backup.git backups
+git clone https://github.com/Lucciano-stn/docker_volume-backup.git 
 cd backups/script
 chmod +x backup_volumes.sh
 chmod +x restore_volume.sh
