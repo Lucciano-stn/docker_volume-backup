@@ -42,13 +42,6 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
     ├── restore_volume.sh
     ├── .env
     └── exclude.txt
-└── docs/
-    ├── installation.md
-    ├── configuration.md
-    ├── usage.md
-    ├── restore.md
-    ├── cron.md
-    └── troubleshooting.md
 ```
 
 ## Licence
