@@ -50,11 +50,13 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
 ## Installation rapide (GitHub)
 
 ```bash
+mkdir -p /opt/docker/
+cd /opt/docker/
+# Cloner le projet
+git clone https://github.com/Lucciano-stn/docker_volume-backup.git backups
+# Creation arborescence du projet  
 mkdir -p /opt/docker/backups/{archive,log,script}
 touch /opt/docker/backups/log/{backup.log,restore.log}
-cd /opt/docker/backups/
-# Cloner le projet
-git clone https://github.com/Lucciano-stn/docker_volume-backup.git
 # Script executable
 chmod +x /opt/docker/backups/script/backup_volumes.sh
 chmod +x /opt/docker/backups/script/restore_volume.sh
