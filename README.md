@@ -99,6 +99,15 @@ EXCLUDE_FILE="/opt/docker/backups/script/exclude.txt"
 RESTORE_LOG_FILE="/opt/docker/backups/log/restore.log"
 DRY_RUN=false  # true=simulation, false=réel
 ```
+
+## Lancer un backup complet
+
+Un backup complet correspond à la sauvegarde de l’ensemble des volumes Docker présents sur l’hôte, à l’exception de ceux explicitement exclus via le fichier exclude.txt.
+
+```bash
+/opt/docker/backups/script/backup_volumes.sh
+```
+
 ## Exclusion de volumes
 
 Les volumes contenus dans le fichier exclude.txt ne sont jamais sauvegardés.
