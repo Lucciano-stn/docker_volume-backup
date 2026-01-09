@@ -32,6 +32,7 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
 
 ```text
 /opt/docker/backups/
+├── README.md
 ├── archive/              # Backups (.tar.gz)
 ├── log/                  # Logs
 │   ├── backup.log
@@ -41,6 +42,14 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
     ├── restore_volume.sh
     ├── .env
     └── exclude.txt
+└── docs/
+    ├── installation.md
+    ├── configuration.md
+    ├── usage.md
+    ├── restore.md
+    ├── cron.md
+    └── troubleshooting.md
+```
 
 ## Licence
 
