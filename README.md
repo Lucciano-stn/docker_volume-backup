@@ -1,6 +1,6 @@
 # Docker Volume Backup & Restore
 
-Scripts Bash permettant la **sauvegarde** et la **restauration fiable de volumes Docker**, avec gestion des containers, rotation des logs, politique de rétention et mode *hot backup*.
+Scripts Bash permettant la **sauvegarde** et la **restauration fiable de volumes Docker**, avec gestion des containers, rotation des logs et politique de rétention.
 
 Conçu pour des **environnements Docker en production** sur serveurs Linux.
 
