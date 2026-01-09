@@ -56,6 +56,11 @@ mkdir -p /opt/docker/backups/
 cd /opt/docker/backups/
 ```
 
+Rendre les scripts exécutable. 
+```bash
+chmod +x backup_volumes.sh
+chmod +x restore_volume.sh
+```
 ## Vérification
 
 ```bash
@@ -72,13 +77,13 @@ L'ensemble des paramètres ci-dessous sont disponibles dans le fichier .env.
 ```bash
 BACKUP_DIR="/opt/docker/backups/archive"
 RETENTION_DAYS=3
-LOG_FILE="/opt/docker/backups/log/backup.log"
+BACKUP_LOG_FILE="/opt/docker/backups/log/backup.log"
 LOG_MAX_SIZE_MB=10
 LOG_MAX_ROTATE=5
 STOP_CONTAINERS=true
 DATE_FORMAT="%Y%m%d_%H%M"
 EXCLUDE_FILE="/opt/docker/backups/script/exclude.txt"
-LOG_FILE="/opt/docker/backups/log/restore.log"
+RESTORE_LOG_FILE="/opt/docker/backups/log/restore.log"
 DRY_RUN=false  # true=simulation, false=réel
 ```
 ## Exclusion de volumes
