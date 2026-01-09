@@ -41,3 +41,16 @@ Conçu pour des **environnements Docker en production** sur serveurs Linux.
     ├── restore_volume.sh
     ├── .env
     └── exclude.txt
+
+## Licence
+
+Copyright (c) 2026 Luciano Sautron  
+All rights reserved.
+
+Ce projet est destiné à un **usage interne ou privé**.
+
+Toute redistribution, modification ou utilisation publique du code
+doit mentionner explicitement l’auteur.
+
+Aucune garantie n’est fournie. L’auteur ne saurait être tenu responsable
+des dommages directs ou indirects résultant de l’utilisation de ce projet.
