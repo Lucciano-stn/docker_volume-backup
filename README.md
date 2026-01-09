@@ -54,7 +54,8 @@ mkdir -p /opt/docker/backups/{archive,log,script}
 touch /opt/docker/backups/log/{backup.log,restore.log}
 cd /opt/docker/backups/
 # Cloner le projet
-git clone https://github.com/Lucciano-stn/docker_volume-backup.git 
+git clone https://github.com/Lucciano-stn/docker_volume-backup.git
+# Script executable
 chmod +x /opt/docker/backups/script/backup_volumes.sh
 chmod +x /opt/docker/backups/script/restore_volume.sh
 ```
